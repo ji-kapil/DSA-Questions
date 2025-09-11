@@ -12,12 +12,13 @@
 >                                            /   \      \ /    \
 >                                           7     11----12       15                        
 >
-> component - 1 and 2 both are 2 graph both both components make one big graph also..........
+> component - 1 and 2 both are 2 graph but both components make one big graph also..........
 
 <br><br>
 
 
 ## `To understanding the graph understanding the basics of graph first.....`
+
 
 ## Basics of Graph 
 - [Create Graph]()
