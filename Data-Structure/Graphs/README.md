@@ -1,8 +1,9 @@
 ## `Graph is advanced Data structure which solve real time problem if you follow this sheet you master in graph in hardly one month only`
+<br><br>
 
 >Graph is combination of components
 >exmaple -
-       
+>      
 >           (component - 1 )                      9            14   (components -2)
 >      0                                         / \           /
 >      |     2                                  /   \         /
@@ -12,9 +13,10 @@
 >                                           7     11----12       15                        
 >
 > component - 1 and 2 both are 2 graph both both components make one big graph also..........
+<br><br>
 
 
-`To understanding the graph understanding the basics of graph first.....`
+## `To understanding the graph understanding the basics of graph first.....`
 
 ## Basics of Graph 
 - [Create Graph]()
