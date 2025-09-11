@@ -1,6 +1,5 @@
 ## `Graph is advanced Data structure which solve real time problem if you follow this sheet you master in graph in hardly one month only`
-<br><br>
-
+<br>
 >Graph is combination of components
 >exmaple -
 >      
@@ -13,9 +12,8 @@
 >                                           7     11----12       15                        
 >
 > component - 1 and 2 both are 2 graph both both components make one big graph also..........
+
 <br><br>
-
-
 ## `To understanding the graph understanding the basics of graph first.....`
 
 ## Basics of Graph 
