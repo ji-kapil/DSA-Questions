@@ -2,12 +2,11 @@
 
 ## ✅ Practice Pattern
 
-<Start topic → Learn theory → Solve 5-10 basic problems → Move to medium>
+>Start topic → Learn theory → Solve 5-10 basic problems → Move to medium
 
-🔁 <DSA Learning Pattern (Short & Effective):
+🔁 DSA Learning Pattern (Short & Effective):
 1. Programming Basics
-
->Learn a language: C++, Java, or Python 
+Learn a language: C++, Java, or Python 
 
 Focus: Loops, Conditionals, Functions, Arrays, Recursion
 
