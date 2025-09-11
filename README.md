@@ -1,9 +1,13 @@
 ### `Arrays → Strings → Linked List → Stack  → Queue → Hashing → Trees → Heaps → Graphs → Tries →  Union Field → Dynamic Programming (Problem Solving Technique) → Competitive Programming (Problem Solving Technique - ON YOUR INTERESTED NOT MUST IMPORTANT)`
 
-🔁 DSA Learning Pattern (Short & Effective):
+## ✅ Practice Pattern
+
+<Start topic → Learn theory → Solve 5-10 basic problems → Move to medium>
+
+🔁 <DSA Learning Pattern (Short & Effective):
 1. Programming Basics
 
-Learn a language: C++, Java, or Python 
+>Learn a language: C++, Java, or Python 
 
 Focus: Loops, Conditionals, Functions, Arrays, Recursion
 
@@ -81,7 +85,5 @@ Heap: Priority Queue, Heap Sort
 
 Segment Tree, Fenwick Tree (for range queries)
 
-✅ Practice Pattern
-
-Start topic → Learn theory → Solve 5-10 basic problems → Move to medium 
+ 
 
