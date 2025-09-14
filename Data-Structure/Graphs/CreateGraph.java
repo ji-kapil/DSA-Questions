@@ -108,3 +108,21 @@ public class CreateGraph {
         print(graph);
     }
 }
+
+// output 
+// { src 0, dest 1, weigth 1 } 
+// { src 1, dest 0, weigth 1 } { src 1, dest 3, weigth 1 } 
+// { src 2, dest 3, weigth 1 } 
+// { src 3, dest 1, weigth 1 } { src 3, dest 2, weigth 1 } { src 3, dest 4, weigth 1 } 
+// { src 4, dest 3, weigth 1 } { src 4, dest 5, weigth 1 } 
+// { src 5, dest 4, weigth 1 } { src 5, dest 6, weigth 1 } 
+// { src 6, dest 5, weigth 1 } 
+// { src 7, dest 8, weigth 1 } 
+// { src 8, dest 7, weigth 1 } { src 8, dest 9, weigth 1 } { src 8, dest 11, weigth 1 } 
+// { src 9, dest 8, weigth 1 } { src 9, dest 10, weigth 1 } 
+// { src 10, dest 9, weigth 1 } { src 10, dest 12, weigth 1 } 
+// { src 11, dest 8, weigth 1 } { src 11, dest 12, weigth 1 } 
+// { src 12, dest 10, weigth 1 } { src 12, dest 11, weigth 1 } { src 12, dest 13, weigth 1 } 
+// { src 13, dest 12, weigth 1 } { src 13, dest 14, weigth 1 } { src 13, dest 15, weigth 1 } 
+// { src 14, dest 13, weigth 1 } 
+// { src 15, dest 13, weigth 1 } 
