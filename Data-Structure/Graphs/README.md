@@ -4,7 +4,7 @@
 >Graph is combination of components
 >exmaple -
 >      
->           (component - 1 )                      9            14   (components -2)
+>           (component - 1)                       9            14   (components -2)
 >      0                                         / \           /
 >      |     2                                  /   \         /
 >      |     |                                 8     10     13 
@@ -21,6 +21,6 @@
 
 
 ## Basics of Graph 
-- [Create Graph]()
+- [Create Graph](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/Graphs/CreateGraph.java)
 - [BFS Traversal](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/Graphs/BFS.java)
 - [DFS Traversal](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/Graphs/DFS.java)

@@ -1,5 +1,6 @@
-import java.util.*;
-public class BFS {
+import java.util.ArrayList;
+
+public class CreateGraph {
     static class Edge{
         int src, dest , Weigth ;
         public Edge (int s , int d, int w){
@@ -77,39 +78,20 @@ public class BFS {
         graph[15].add(new Edge(15, 13, 1));
 
     }
- 
-    public static void BFSUtil(ArrayList<Edge> [] graph ,int i , boolean vis[]){
-        Queue<Integer> q = new LinkedList<>();
-        q.add(i);
-    
-        while (!q.isEmpty())  {
-            int curr = q.remove();
-            if (!vis[curr]) {
-                System.out.print(curr + " ");
-                vis[curr] = true ;
-                for (int j = 0; j < graph[curr].size(); j++) {
-                    Edge e = graph[curr].get(j);
-                    q.add(e.dest);
-                }
-                
-            }
-        }
-    }
 
-    public static void BFS(ArrayList<Edge> [] graph){
-        boolean vis[] = new boolean[graph.length];
+    public static void print(ArrayList<Edge>[] graph){
         for (int i = 0; i < graph.length; i++) {
-            if (!vis[i]) {
-                BFSUtil(graph,i, vis);
+            for (int j = 0; j < graph[i].size(); j++) {
+                Edge e = graph[i].get(j);
+                System.out.print("{ src " + e.src + ", dest " + e.dest + ", weigth " + e.Weigth + " } ");
             }
+            System.out.println();
         }
     }
 
-
-    // start the code - main
     public static void main(String[] args) {
 
-       
+             
         //           (component - 1)                       9            14   (components -2)
         //      0                                         / \           /
         //      |     2                                  /   \         /
@@ -121,8 +103,8 @@ public class BFS {
         // graph is combination of components so, above is only one graph 
 
         int v = 16 ;
-        ArrayList<Edge> [] graph = new ArrayList[v];
+        ArrayList<Edge>[] graph = new ArrayList[v];
         createGraph(graph);
-        BFS(graph);       // output  0 1 3 2 4 5 6 7 8 9 11 10 12 13 14 15
+        print(graph);
     }
 }

@@ -100,7 +100,7 @@ public class DFS {
     // start the code - main
     public static void main(String[] args) {
          
-        //           (component - 1 )                      9            14   (components -2)
+        //           (component - 1)                       9            14   (components -2)
         //      0                                         / \           /
         //      |     2                                  /   \         /
         //      |     |                                 8     10     13 
