@@ -12,6 +12,8 @@ public class CyclicDetection {
         }
     }
 
+
+    //  for used undirected graph.........
     public static void createGraph(ArrayList<Edge> [] graph) {
         for (int i = 0; i < graph.length; i++) {
             graph[i] = new ArrayList<>();
@@ -82,7 +84,9 @@ public class CyclicDetection {
     }
 
 
-    
+
+ 
+    // cyclic detection in undirected graph 
     public static boolean cyclicDetection(ArrayList<Edge>[] graph){
         boolean[] visited = new boolean[graph.length];
         for (int i = 0; i < graph.length; i++) {
@@ -95,6 +99,7 @@ public class CyclicDetection {
         return false ;
     }
 
+    // undirected graph util function 
     public static boolean cyclicDetectionUtil(ArrayList<Edge>[] graph , int src , boolean[] visited , int par){
         visited[src] = true;
         for (int i = 0; i < graph[src].size() ; i++) {
@@ -110,9 +115,60 @@ public class CyclicDetection {
         return false ;
     }
 
+    // used to create the directed graph
+    public static void createGraph1(ArrayList<Edge> [] graph) {
+        for (int i = 0; i < graph.length; i++) {
+            graph[i] = new ArrayList<>();
+        }
+        graph[0].add(new Edge(0,1,1));
+        graph[0].add(new Edge(0,2,1));
+
+        graph[1].add(new Edge(1,4,1));
+
+        graph[2].add(new Edge(2,3,1));
+
+        graph[3].add(new Edge(3,4,1));
+
+        graph[4].add(new Edge(4,5,1));
+
+
+
+    }
+
+    public static boolean cyclic(ArrayList<Edge> [] graph){
+        boolean[] visited = new boolean[graph.length];
+        boolean [] st = new boolean[graph.length];
+        for (int i = 0; i <graph.length ; i++) {
+            if (!visited[i]) {
+                if (cyclicUtil(graph, i, visited, st)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public static boolean cyclicUtil(ArrayList<Edge> [] graph , int i , boolean[] visited, boolean[] st){
+        visited[i] = true;
+        st[i] = true ;
+        for (int j = 0; j < graph[i].size(); j++) {
+            Edge e = graph[i].get(j);
+            if(st[e.dest]){
+                return true;
+             }
+            if (!visited[e.dest] && cyclicUtil(graph, e.dest, visited, st)){
+                return true ;
+            }
+        }
+
+        st[i] = false;
+        return false ;
+    }
+
     public static void main(String[] args) {
 
 
+        // undirected graph 
         //           (component - 1)                       9            14   (components -2)
         //      0                                         / \           /
         //      |     2                                  /   \         /
@@ -124,14 +180,38 @@ public class CyclicDetection {
         // graph is combination of components so, above is only one graph
 
 
+        //  Graph Structure (Directed)                       Edges:
+
+        //                 0                                 0 → 1
+        //                / \                                0 → 2
+        //               v   v                               1 → 4
+        //               1   2                               2 → 3
+        //              |    \                               3 → 4
+        //              v     v                              4 → 5
+        //              4     3
+        //               \   /
+        //                v v
+        //                 5
+
+
+
+        // used for undirected graph 
         int v = 16 ;
         ArrayList<Edge> [] graph = new ArrayList[v];
         createGraph(graph);
         System.out.println(cyclicDetection(graph));
+
+
+        // used for directed graph
+          int a = 6 ;
+        ArrayList<Edge> [] graph1 = new ArrayList[a];
+        createGraph(graph);
+        System.out.println(cyclic(graph1));
+        
     }
 }
 
-// output
+// output -  for undirected graph
 // true
 
 //   note - if you want to print false then we remove cycle form the graph so comment out 
@@ -139,4 +219,12 @@ public class CyclicDetection {
 //          graph[11].add(new Edge(11, 12, 1));  line no 64
 //          graph[12].add(new Edge(12, 11, 1));  line no 68
 
+
+//  output - for directed graph
+//   false
+
+//   note - if you want to print true then we need to make cycle in directed graph and add one line 
+//          of code after line one 132..
+//          add - graph[5].add(new Edge(5, 3, 1));
+//          this line help to connect the edge 5 to 3 need graph having one cycle the ouput is true.
 
