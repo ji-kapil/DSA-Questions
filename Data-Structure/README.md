@@ -12,7 +12,7 @@
 
 ## Base of Data Structure
 
-#### >Ask frequently in any interview - "if you target in technical department"
+>#### Ask frequently in any interview - "if you target in technical department"
 
 - [Array](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Array)
 - [LinkedList](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/LinkedList)
