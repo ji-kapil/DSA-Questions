@@ -54,8 +54,9 @@
 <br>
 
 - [Trie](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Trie)
+- [B - Tree](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/B-Tree)
 - [Union Find](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Union-Find)
 - [Segement Tree](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Segement-Tree)
-- [B - Tree](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/B-Tree)
+
 
 
