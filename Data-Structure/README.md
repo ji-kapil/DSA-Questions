@@ -22,8 +22,8 @@
 
 - [Array](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Array)
 - [LinkedList](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/LinkedList)
-- [Stack](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Stacks)
-- [Queue](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Queues)
+- [Stack](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Stack)
+- [Queue](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Queue)
 
 <br><br>
 
@@ -38,7 +38,7 @@
 - [Heap](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Heap)
 - [Hashing / Hash Table](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Hash-Table)
 - [Binary Tree](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Binary-Tree)
-- [Graph](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Graphs)
+- [Graph](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Graph)
 
 <br><br>
 
