@@ -27,5 +27,5 @@
 - [Find the Path extist or not](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/Graphs/FindPath.java)
 
 ## medium questions
-- [Detect Cyclic in the graph](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/CyclicDetection.java)
+- [Cyclic Detection in the graph](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/CyclicDetection.java)
 
