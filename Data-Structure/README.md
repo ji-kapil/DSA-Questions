@@ -35,9 +35,9 @@
 
 <br> 
 
-- [Binary Tree](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Binary-Tree)
 - [Heap](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Heap)
 - [Hashing / Hash Table](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Hash-Table)
+- [Binary Tree](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Binary-Tree)
 - [Graph](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Graphs)
 
 <br><br>
