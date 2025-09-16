@@ -47,7 +47,7 @@
 
 <br>
 
->Ask only few interview or say only ask those "software engineer" which having experience 1 to 4 year and they want to stwich the job.
+>Ask only few interview or say only ask those "software engineer" which having experience 1 to 4 year and they want to switch the job.
 >
 >Thse are variant of tree and graph and combination of other data structure to reduced the time and space complexity. Before starting the these data structure complete all data stucture otherwise you can't understand thses data structure...
 
