@@ -1,12 +1,12 @@
-### In real world many Data structure available but only few Data structure used to solve the real problem and no need to learn all Data srtucture it is only waste of time only study according thier needs....
+### In real world many Data structure available but only few Data structure used to solve the real problem and no need to learn all Data srtucture it is only waste of time only study according their needs....
 
-### In Product Based company only ask few and popular data structure and according to thier needs....
+### In Product Based company only ask few and popular data structure and according to their needs....
 
 ### *Before starting the data structure you can understand the [Basic-Logic](https://github.com/ji-kapil/DSA-Questions/tree/main/Basic-Logic) of any programming languange.. In this sheet all data sturcture completed in java....*
 
 <br>
 
->Note -  if you complete any data structure do aleast 12 questions each because one data structure used in other data structure problem. all data structure link togther but learn it individually and go on [leetcode](https://leetcode.com) after the completed Base of Data Structure because almost all problem on [leetcode](https://leetcode.com) link aleast two data structure.
+>Note -  if you complete any data structure do aleast 12 questions each because one data structure used in other data structure problem. all data structure link togther but learn it individually and go on [leetcode](https://leetcode.com) after the completed Base of Data Structure because almost all problem on [leetcode](https://leetcode.com) link at least two data structure.
 
 <br>
 
