@@ -1,7 +1,11 @@
-//   A Bipartite Graph is a graph whose vertices can be divided into two independent sets, U and V such that every edge (u, v) either connects a vertex from U to V or a vertex from V to U. In other words, for every edge (u, v), either u belongs to U and v to V, or u belongs to V and v to U. We can also say that there is no edge that connects vertices of same set.
+//   A Bipartite Graph is a graph whose vertices can be divided into two independent sets, 
+//   U and V such that every edge (u, v) either connects a vertex from U to V or a vertex 
+//   from V to U. In other words, for every edge (u, v), either u belongs to U and v to V, 
+//   or u belongs to V and v to U. We can also say that there is no edge that connects 
+//   vertices of same set.
 
-
-//   Bonus - All acyclic graph and even number of node in cyclic graph always bipartite graph and odd number nodes node in cyclic graph is not bipartite graph....
+//   Bonus - All acyclic graph and even number of node in cyclic graph always bipartite graph 
+//   and odd number nodes node in cyclic graph is not bipartite graph....
 
 
 import java.util.*;
@@ -144,5 +148,6 @@ public class Bipartite {
 //          line no 63 and 67 lines form the code it remove the edge between 11 and 12.......
 //          graph[10].add(new Edge(10, 12, 1));  line no 63
 //          graph[12].add(new Edge(12, 10, 1));  line no 67   "then it become bipartite graph"
-
+//
+//
 
