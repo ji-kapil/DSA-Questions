@@ -2,7 +2,7 @@
 
 ### In Product Based company only ask few and popular data structure and according to thier needs....
 
-### *before starting the data structure you can understand the [Basic-Logic](https://github.com/ji-kapil/DSA-Questions/tree/main/Basic-Logic) of any programming languange.. In this sheet all data sturcture completed in java....*
+### *Before starting the data structure you can understand the [Basic-Logic](https://github.com/ji-kapil/DSA-Questions/tree/main/Basic-Logic) of any programming languange.. In this sheet all data sturcture completed in java....*
 
 <br>
 
@@ -10,7 +10,7 @@
 
 <br>
 
-### bonus point - Do partice on the [Hacker Rank](https://www.hackerrank.com)  or  [greek for greek](https://www.geeksforgeeks.org) for logic buliding because they provide basic question to advanced level questions according to our needs.
+### Bonus point - Do partice on the [Hacker Rank](https://www.hackerrank.com)  or  [greek for greek](https://www.geeksforgeeks.org) for logic buliding because they provide basic question to advanced level questions according to our needs.
 
 <br>
 
