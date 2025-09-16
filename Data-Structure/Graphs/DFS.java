@@ -1,11 +1,11 @@
 import java.util.*;
 public class DFS {
     static class Edge{
-        int src, dest , weigth ;
+        int src, dest , weight ;
         public Edge(int s, int d, int w){
             this.src = s ;
             this.dest = d ;
-            this.weigth = w ;
+            this.weight = w ;
         }
     }
 

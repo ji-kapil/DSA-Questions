@@ -2,11 +2,11 @@ import java.util.ArrayList;
 
 public class CreateGraph {
     static class Edge{
-        int src, dest , Weigth ;
+        int src, dest , Weight ;
         public Edge (int s , int d, int w){
             this.src = s;
             this.dest = d;
-            this.Weigth = w;
+            this.Weight = w;
         }
     }
 
@@ -83,7 +83,7 @@ public class CreateGraph {
         for (int i = 0; i < graph.length; i++) {
             for (int j = 0; j < graph[i].size(); j++) {
                 Edge e = graph[i].get(j);
-                System.out.print("{ src " + e.src + ", dest " + e.dest + ", weigth " + e.Weigth + " } ");
+                System.out.print("{ src " + e.src + ", dest " + e.dest + ", weigth " + e.Weight + " } ");
             }
             System.out.println();
         }

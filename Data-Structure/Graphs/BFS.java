@@ -1,11 +1,11 @@
 import java.util.*;
 public class BFS {
     static class Edge{
-        int src, dest , Weigth ;
+        int src, dest , Weight ;
         public Edge (int s , int d, int w){
             this.src = s;
             this.dest = d;
-            this.Weigth = w;
+            this.Weight = w;
         }
     }
 

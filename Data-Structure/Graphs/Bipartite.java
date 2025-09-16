@@ -1,14 +1,17 @@
-import java.util.*;
-public class CyclicDetection {
-    static class Edge{
-        int dest ;
-        int src ;
-        int wt ;
+//   A Bipartite Graph is a graph whose vertices can be divided into two independent sets, U and V such that every edge (u, v) either connects a vertex from U to V or a vertex from V to U. In other words, for every edge (u, v), either u belongs to U and v to V, or u belongs to V and v to U. We can also say that there is no edge that connects vertices of same set.
 
-        public Edge(int s, int d , int w){
+
+//   Bonus - All acyclic graph and even number of node in cyclic graph always bipartite graph and odd number nodes node in cyclic graph is not bipartite graph....
+
+
+import java.util.*;
+public class Bipartite {
+    static class Edge{
+        int src, dest , Weight ;
+        public Edge (int s , int d, int w){
             this.src = s;
             this.dest = d;
-            this.wt = w ;
+            this.Weight = w;
         }
     }
 
@@ -82,33 +85,38 @@ public class CyclicDetection {
     }
 
 
-    
-    public static boolean cyclicDetection(ArrayList<Edge>[] graph){
-        boolean[] visited = new boolean[graph.length];
-        for (int i = 0; i < graph.length; i++) {
-            if (!visited[i]) {
-                if(cyclicDetectionUtil(graph, i , visited , -1 )){
-                    return true ;
+    public static boolean bipartite(ArrayList<Edge> [] graph){
+        int[] colors = new int[graph.length];
+        for (int i = 0; i < colors.length; i++) {
+            colors[i] = -1;
+        }
+
+        Queue<Integer> q = new LinkedList<>();
+
+        for (int i = 0; i <graph.length ; i++) {
+            if (colors[i] == -1) {
+                q.add(i);
+                colors[i] = 0 ; // black
+
+                while (!q.isEmpty()){
+                    int curr = q.remove();
+                    for (int j = 0; j < graph[curr].size(); j++) {
+                        Edge e = graph[curr].get(j);
+                        if (colors[e.dest] == -1) {
+                            int nextcol =  colors[curr]== 0 ? 1 : 0 ;
+                            colors[e.dest] = nextcol;
+                            q.add(e.dest);
+                        } else if (colors[e.dest] == colors[curr]) {
+                            return false ;
+                        }
+                    }
                 }
             }
         }
-        return false ;
+
+        return true ;
     }
 
-    public static boolean cyclicDetectionUtil(ArrayList<Edge>[] graph , int src , boolean[] visited , int par){
-        visited[src] = true;
-        for (int i = 0; i < graph[src].size() ; i++) {
-            Edge e = graph[src].get(i);
-            if (!visited[e.dest]) {
-                if(cyclicDetectionUtil(graph , e.dest , visited , src)){
-                    return true;
-                }
-            } else if (visited[e.dest] &&  e.dest != par) {
-                return true ;
-            }
-        }
-        return false ;
-    }
 
     public static void main(String[] args) {
 
@@ -119,7 +127,7 @@ public class CyclicDetection {
         //      |     |                                 8     10     13
         //      1 --- 3 ---- 4 ---- 5 ---- 6           / \      \   /  \
         //                                            /   \      \ /    \
-        //                                           7     11----12       15
+        //                                           7     11----12      15
         //
         // graph is combination of components so, above is only one graph
 
@@ -127,16 +135,14 @@ public class CyclicDetection {
         int v = 16 ;
         ArrayList<Edge> [] graph = new ArrayList[v];
         createGraph(graph);
-        System.out.println(cyclicDetection(graph));
+        System.out.println(bipartite(graph));        // output - false 
+
     }
 }
 
-// output
-// true
-
-//   note - if you want to print false then we remove cycle form the graph so comment out 
-//          line no 64 and 68 lines form the code it remove the edge between 11 and 12.......
-//          graph[11].add(new Edge(11, 12, 1));  line no 64
-//          graph[12].add(new Edge(12, 11, 1));  line no 68
+//   note - if you want to print true then we remove cycle form the graph so comment out 
+//          line no 63 and 67 lines form the code it remove the edge between 11 and 12.......
+//          graph[10].add(new Edge(10, 12, 1));  line no 63
+//          graph[12].add(new Edge(12, 10, 1));  line no 67   "then it become bipartite graph"
 
 

@@ -19,13 +19,20 @@
 
 ## `To understanding the graph understanding the basics of graph first.....`
 
+<br><br>
 
-## Basics of Graph 
+### Basics of Graph 
 - [Create Graph](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/Graphs/CreateGraph.java)
 - [BFS Traversal](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/Graphs/BFS.java)
 - [DFS Traversal](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/Graphs/DFS.java)
-- [Find the Path extist or not](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/Graphs/FindPath.java)
+- [Find the Path](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/Graphs/FindPath.java)
 
-## medium questions
+<br><br>
+
+### medium questions
+
+<br>
+
 - [Cyclic Detection in the graph](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/CyclicDetection.java)
+- [Bipartite Graph](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/Bipartite.java)
 
