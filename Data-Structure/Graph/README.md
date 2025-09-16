@@ -33,6 +33,6 @@
 
 <br>
 
-- [Cyclic Detection in the graph](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/CyclicDetection.java)
-- [Bipartite Graph](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/Bipartite.java)
+- [Cyclic Detection in the graph](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/Graph/CyclicDetection.java)
+- [Bipartite Graph](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/Graph/Bipartite.java)
 
