@@ -6,7 +6,7 @@
 
 >Note -  if you complete any data structure do aleast 12 questions each because one data structure used in other data structure problem. all data structure link togther but learn it individually and go on [leetcode](https://leetcode.com/) after the completed Base of Data Structure because almost all problem on [leetcode](https://leetcode.com/) link aleast two data structure.
 
-### `bonus point - Do partice on the [Hacker Rank ](https://www.hackerrank.com/) or [greek for greek](https://www.geeksforgeeks.org/) for logic buliding because they provide basic question to advanced level questions according to our needs.`
+### bonus point - Do partice on the [Hacker Rank](https://www.hackerrank.com/) or [greek for greek](https://www.geeksforgeeks.org) for logic buliding because they provide basic question to advanced level questions according to our needs.
 
 <br><br>
 
