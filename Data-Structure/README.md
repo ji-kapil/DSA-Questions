@@ -6,39 +6,47 @@
 
 >Note -  if you complete any data structure do aleast 12 questions beacuse one data structure used in other data structure problem. all data structure link togther but leran it individually and go on leetcode after the completed Base of Data Structure beacuse almost all problem on leetcode link aleast two data structure.
 
-#### `bonus point - Do partice on the Hacker Rank or greek for greek for logic buliding it provide basic question to advanced level questions.`
+### `bonus point - Do partice on the Hacker Rank or greek for greek for logic buliding it provide basic question to advanced level questions.`
 
-
----
-
+<br><br>
 
 ## Base of Data Structure
 
  > Ask frequently in any interview - "if you target in technical department"
+
 <br>
+
 - [Array](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Array)
 - [LinkedList](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/LinkedList)
 - [Stack](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Stacks)
 - [Queue](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Queues)
 
----
+<br><br>
 
 ## Medium Level Data Structure
 
-#### >Ask frequently in only product based interview - "if you target in technical department"
+<br>
+
+>Ask frequently in only product based interview - "if you target in technical department"
+
+<br> 
 
 - [Binary Tree](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Binary-Tree)
 - [Heap](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Heap)
 - [Hashing / Hash Table](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Hash-Table)
 - [Graph](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Graphs)
 
----
+<br><br>
+
 
 ## Advanced Data Structures
 
-#### >Ask only few interview or say only ask those "software engineer" which having experience 1 to 4 year and they want to stwich the job 
+<br>
 
-#### >Thse are variant of tree and graph and combination of other data structure to reduced the time and space complexity. Before starting the these data structure complete all data stucture otherwise you can't understand thses data structure...
+>Ask only few interview or say only ask those "software engineer" which having experience 1 to 4 year and they want to stwich the job.
+>Thse are variant of tree and graph and combination of other data structure to reduced the time and space complexity. Before starting the these data structure complete all data stucture otherwise you can't understand thses data structure...
+
+<br>
 
 - [Trie](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Trie)
 - [Union Find](https://github.com/ji-kapil/DSA-Questions/tree/main/Data-Structure/Union-Find)
