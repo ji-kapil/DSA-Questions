@@ -1,16 +1,21 @@
 import java.util.*;
-public class BFS {
-    static class Edge{
-        int src, dest , Weigth ;
-        public Edge (int s , int d, int w){
+
+public class FindPath {
+     static class Edge{
+        int dest ;
+        int src ;
+        int wt ;
+
+        public Edge(int s, int d , int w){
             this.src = s;
             this.dest = d;
-            this.Weigth = w;
+            this.wt = w ;
         }
     }
 
-    public static void createGraph(ArrayList<Edge> [] graph){
-        for (int i = 0; i <graph.length ; i++) {
+
+    public static void createGraph(ArrayList<Edge> [] graph) {
+        for (int i = 0; i < graph.length; i++) {
             graph[i] = new ArrayList<>();
         }
 
@@ -27,13 +32,13 @@ public class BFS {
         // vertex - 3
         graph[3].add(new Edge(3, 1, 1));
         graph[3].add(new Edge(3, 2, 1));
-        graph[3].add(new Edge(3,4, 1));
+        graph[3].add(new Edge(3, 4, 1));
 
         // vertex - 4
         graph[4].add(new Edge(4, 3, 1));
         graph[4].add(new Edge(4, 5, 1));
 
-        // vertex - 5 
+        // vertex - 5
         graph[5].add(new Edge(5, 4, 1));
         graph[5].add(new Edge(5, 6, 1));
 
@@ -43,7 +48,7 @@ public class BFS {
         // vertex - 7
         graph[7].add(new Edge(7, 8, 1));
 
-        // vertex - 8 
+        // vertex - 8
         graph[8].add(new Edge(8, 7, 1));
         graph[8].add(new Edge(8, 9, 1));
         graph[8].add(new Edge(8, 11, 1));
@@ -52,11 +57,11 @@ public class BFS {
         graph[9].add(new Edge(9, 8, 1));
         graph[9].add(new Edge(9, 10, 1));
 
-        // vertex - 10 
+        // vertex - 10
         graph[10].add(new Edge(10, 9, 1));
         graph[10].add(new Edge(10, 12, 1));
 
-        // vertex - 11 
+        // vertex - 11
         graph[11].add(new Edge(11, 8, 1));
         graph[11].add(new Edge(11, 12, 1));
 
@@ -65,7 +70,7 @@ public class BFS {
         graph[12].add(new Edge(12, 11, 1));
         graph[12].add(new Edge(12, 13, 1));
 
-        // vertex - 13 
+        // vertex - 13
         graph[13].add(new Edge(13, 12, 1));
         graph[13].add(new Edge(13, 14, 1));
         graph[13].add(new Edge(13, 15, 1));
@@ -77,54 +82,47 @@ public class BFS {
         graph[15].add(new Edge(15, 13, 1));
 
     }
- 
-    public static void BFSUtil(ArrayList<Edge> [] graph ,int i , boolean vis[]){
-        Queue<Integer> q = new LinkedList<>();
-        q.add(i);
-    
-        while (!q.isEmpty())  {
-            int curr = q.remove();
-            if (!vis[curr]) {
-                System.out.print(curr + " ");
-                vis[curr] = true ;
-                for (int j = 0; j < graph[curr].size(); j++) {
-                    Edge e = graph[curr].get(j);
-                    q.add(e.dest);
+
+    public static boolean path(ArrayList<Edge> [] graph , int src , int dest , boolean vis [] ) {
+        if (src == dest) {
+            return true;
+        }
+        vis[src] = true ;
+        for (int i = 0; i <graph[src].size() ; i++) {
+            Edge e = graph[src].get(i);
+            if(!vis[e.dest]){
+                if(path(graph , e.dest ,  dest , vis )) {
+                    return true;
                 }
-                
             }
         }
+        return false ;
     }
 
-    public static void BFS(ArrayList<Edge> [] graph){
-        boolean vis[] = new boolean[graph.length];
-        for (int i = 0; i < graph.length; i++) {
-            if (!vis[i]) {
-                BFSUtil(graph,i, vis);
-            }
-        }
-    }
+     public static void main(String[] args) {
 
 
-    // start the code - main
-    public static void main(String[] args) {
-
-       
         //           (component - 1)                       9            14   (components -2)
         //      0                                         / \           /
         //      |     2                                  /   \         /
-        //      |     |                                 8     10     13 
+        //      |     |                                 8     10     13
         //      1 --- 3 ---- 4 ---- 5 ---- 6           / \      \   /  \
         //                                            /   \      \ /    \
-        //                                           7     11----12       15                        
+        //                                           7     11----12       15
         //
-        // graph is combination of components so, above is only one graph 
+        // graph is combination of components so, above is only one graph
+
 
         int v = 16 ;
         ArrayList<Edge> [] graph = new ArrayList[v];
         createGraph(graph);
-        BFS(graph);       // output  0 1 3 2 4 5 6 7 8 9 11 10 12 13 14 15
+        int src = 0 , dest = 6 ; // value change according to thier needs......
+
+        System.out.println(path(graph, src , dest , new boolean[v] ));
     }
 }
+
+//   output 
+//   true
 
 

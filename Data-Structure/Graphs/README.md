@@ -24,3 +24,8 @@
 - [Create Graph](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/Graphs/CreateGraph.java)
 - [BFS Traversal](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/Graphs/BFS.java)
 - [DFS Traversal](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/Graphs/DFS.java)
+- [Find the Path extist or not](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/Graphs/FindPath.java)
+
+## medium questions
+- [Detect Cyclic in the graph](https://github.com/ji-kapil/DSA-Questions/blob/main/Data-Structure/CyclicDetection.java)
+
